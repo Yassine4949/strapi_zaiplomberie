@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_items",
+  "info": {
+    "singularName": "gallery-item",
+    "pluralName": "gallery-items",
+    "displayName": "GalleryItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "salle-de-bain",
+        "cuisine",
+        "wc-suspendus",
+        "plancher-chauffant",
+        "desembouage",
+        "remplacement",
+        "recreation",
+        "reparation",
+        "chaudiere"
+      ]
+    },
+    "position": {
+      "type": "integer"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}
